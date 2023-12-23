@@ -9,9 +9,9 @@ processors:
 
 exporters:
   otlphttp:
-    endpoint: "http://192.168.3.1:9998/e/1/api/v2/otlp"
+    endpoint: "https://tbg18684.sprint.dynatracelabs.com/api/v2/otlp"
     headers:
-      Authorization: "Api-Token dt0c01.FAKESTAGXTJ4YBUPP3HACW6.FAKEH4TWMY76FAKEXLEON4WTNOBU437IFKNONT3WIXPK4EEA3ZUHURHOTFAKE"
+      Authorization: "Api-Token dt0c01.CDJGVWMIGYOOZS2ERFNKCI3K.TXTVGCDFDYU7WR765UA6PUNYP7GMTXK6G3UGMVJ7ONMV5TRELD3I2HHNMHOJCV7K"
   logging:
     loglevel: debug
 
