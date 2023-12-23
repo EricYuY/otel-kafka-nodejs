@@ -30,7 +30,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
-      MONGO_INITDB_DATABASE: splunk-apm-poc
+      MONGO_INITDB_DATABASE: test-consumer-e
   mongo-express:
     image: mongo-express
     restart: always
