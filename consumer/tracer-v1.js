@@ -10,9 +10,9 @@ diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.ALL)
 
 const sdk = new opentelemetry.NodeSDK({
   // traceExporter: new opentelemetry.tracing.ConsoleSpanExporter(),
-  traceExporter: new CollectorTraceExporter({
-    url: 'http://otel-collector:4318/v1/trace'
-  }),
+  //traceExporter: new CollectorTraceExporter({
+  //  url: 'http://otel-collector:4318/v1/trace'
+  //}),
   instrumentations: [
     getNodeAutoInstrumentations(),
     new KafkaJsInstrumentation(),
