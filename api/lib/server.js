@@ -45,7 +45,7 @@ const init = async () => {
       // const currentSpan = api.trace.getSpan(api.context.active())
       // currentSpan.setAttribute('workflow.name', `dataup-cluster-${request.params.cluster}`)
 
-      const topic = `iot-splunk-apm-poc-${request.params.cluster}-in`
+      const topic = `topico-${request.params.cluster}-entrada`
       console.log('Sending message to topic:', topic)
       await kafkaProducer.send({
         topic,
