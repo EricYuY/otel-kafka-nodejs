@@ -1,0 +1,26 @@
+{
+  "name": "iot-splunk-apm-poc-client",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": ". ../exports.sh && nodemon index.js",
+    "start": "node index.js",
+    "build": "npm run docker:build && npm run docker:push"
+  },
+  "author": "Tim Brand <t.brand@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.4",
+    "@opentelemetry/api": "^0.21.0",
+    "@opentelemetry/exporter-jaeger": "^0.21.0",
+    "@opentelemetry/instrumentation": "^0.21.0",
+    "@opentelemetry/instrumentation-http": "^0.21.0",
+    "@opentelemetry/node": "^0.21.0",
+    "@opentelemetry/tracing": "^0.21.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
