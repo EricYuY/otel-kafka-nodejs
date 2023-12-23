@@ -14,7 +14,7 @@ services:
       - "zookeeper"
     environment:
       KAFKA_ADVERTISED_HOST_NAME: kafka
-      KAFKA_CREATE_TOPICS: "iot-splunk-apm-poc-a-in:1:1,iot-splunk-apm-poc-a-out:1:1"
+      KAFKA_CREATE_TOPICS: "topico-entrada:1:1,topico-salida:1:1"
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
