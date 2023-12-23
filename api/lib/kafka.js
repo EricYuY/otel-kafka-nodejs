@@ -37,8 +37,8 @@ module.exports = class Kafka {
     // await admin.createTopics({
     //   waitForLeaders: true,
     //   topics: [
-    //     { topic: 'iot-splunk-apm-poc-a-in' },
-    //     { topic: 'iot-splunk-apm-poc-a-out' }        
+    //     { topic: 'in' },
+    //     { topic: 'out' }        
     //   ],
     // })    
     // console.log('Done creating topics')
