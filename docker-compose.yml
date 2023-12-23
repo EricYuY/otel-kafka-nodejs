@@ -50,7 +50,7 @@ services:
       DT_LOGLEVELCON: INFO
       # Enable if OneAgent should be disabled and Trace Ingest should be used
       # DT_INJECTION_RULES: ::EXCLUDE:ALL,,
-      OTEL_RESOURCE_ATTRIBUTES: "service.name=poc-api"
+      OTEL_RESOURCE_ATTRIBUTES: "service.name=eric-api-consumer"
       CLUSTER: a
     depends_on:
       - "zookeeper"
