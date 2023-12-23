@@ -23,7 +23,7 @@ module.exports = class Kafka {
 
   static async initConsumer () {
     const kafkaConsumer = this.kafka().consumer({
-      groupId: `splunk-apm-poc-${process.env.CLUSTER}`,
+      groupId: `test-consumer-group-${process.env.CLUSTER}`,
     })
 
     await kafkaConsumer.connect()
