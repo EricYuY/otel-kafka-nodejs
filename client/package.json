@@ -1,5 +1,5 @@
 {
-  "name": "iot-splunk-apm-poc-client",
+  "name": "ms-cliente-loadgen",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
