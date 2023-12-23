@@ -11,7 +11,7 @@ const init = async () => {
   const mongoDb = mongo.db(`${process.env.MONGO_INITDB_DATABASE}`)
   const collectionClusterA = mongoDb.collection(`cluster-${process.env.CLUSTER}`)
 
-  const topic = `iot-splunk-apm-poc-${process.env.CLUSTER}-in`
+  const topic = `topico-${process.env.CLUSTER}-entrada`
   console.log({ topic })
   kafkaConsumer.subscribe({
     topic,
@@ -36,7 +36,7 @@ const init = async () => {
 
       console.log('Sending message to OUT topic')
       await kafkaProducer.send({
-        topic: topic.replace('-in', '-out'),
+        topic: topic.replace('-entrada', '-salida'),
         messages: [{
           key: messageKey,
           value: JSON.stringify(messageValue),
