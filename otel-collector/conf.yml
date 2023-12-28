@@ -11,7 +11,7 @@ exporters:
   otlphttp:
     endpoint: "https://tbg18684.sprint.dynatracelabs.com/api/v2/otlp"
     headers:
-      Authorization: "Api-Token dt0c01.CDJGVWMIGYOOZS2ERFNKCI3K.TXTVGCDFDYU7WR765UA6PUNYP7GMTXK6G3UGMVJ7ONMV5TRELD3I2HHNMHOJCV7K"
+      Authorization: "Api-Token dt0c01.XXXXXXXXXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
   logging:
     loglevel: debug
 
